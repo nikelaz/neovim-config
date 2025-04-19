@@ -1,0 +1,5 @@
+require("nikelaz.settings")
+require("nikelaz.remap")
+require("nikelaz.lazy_plugin_manager")
+require("nikelaz.color_scheme")
+require("nikelaz.telescope_find")
