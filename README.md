@@ -1,16 +1,5 @@
-# Dependencies
+# Nikola's Neovim Config
 
-## NPM Packages:
+Uses Lazy for plugin management `:Lazy` and Mason for LSP's `:Mason`
+Default theme is `tokyonight`.
 
-* typescript
-* typescript-language-server
-
-## Install with package manager
-
-* ripgrep
-* rust-analyzer
-* clangd
-
-## LUA Language Server
-
-* https://luals.github.io/#install

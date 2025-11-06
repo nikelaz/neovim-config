@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 -- Synchronizes the clipboard
 -- You will need to install wl-clipboard on Wayland
 -- and xclip and/or xsel on XOrg
-vim.api.nvim_set_option("clipboard", "unnamed")
+vim.opt.clipboard = "unnamedplus"
 
 -- Line Numbers
 vim.opt.nu = true
