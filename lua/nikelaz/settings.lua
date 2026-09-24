@@ -1,6 +1,9 @@
 -- Map the leader key
 vim.g.mapleader = " "
 
+-- Sort netrw entries alphabetically by name
+vim.g.netrw_sort_by = "name"
+
 -- Synchronizes the clipboard
 -- You will need to install wl-clipboard on Wayland
 -- and xclip and/or xsel on XOrg
@@ -20,6 +23,17 @@ vim.opt.expandtab = true
 
 -- Smart Indentation
 vim.opt.smartindent = true
+
+-- Use four spaces for C and C++ files
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "c", "cpp" },
+	callback = function()
+		vim.opt_local.tabstop = 4
+		vim.opt_local.softtabstop = 4
+		vim.opt_local.shiftwidth = 4
+		vim.opt_local.expandtab = true
+	end,
+})
 
 -- Search Settings / Incremental Search
 vim.opt.hlsearch = false
